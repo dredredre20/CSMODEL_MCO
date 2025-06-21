@@ -252,7 +252,6 @@ locations_mapping = {
     'Chicago': 'United States',
     'Dresden': 'Germany',
     'Santa Fe': 'United States',
-    '': 'United States',
     'Argentina': 'Argentina',
     'Bhāvnagar': 'India',
     'Allentown': 'United States',

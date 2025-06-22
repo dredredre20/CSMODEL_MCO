@@ -1,3 +1,106 @@
+# This dictionary maps raw seniority labels from the dataset to broader, 
+# standardized categories.
+seniority_mapping = {
+    'non_manager': 'Non-Managerial Position',
+    'manager': 'Managerial Position',
+    'director': 'Managerial Position',
+    'head': 'Managerial Position',
+    'vice_president': 'Executive Position',
+    'c_level': 'Executive Position',
+    'partner': 'Executive Position',
+    'president': 'Executive Position',
+}
+
+
+# This dictionary maps specific O*NET job families into broader, 
+# standardized job field categories.
+job_fields_mapping = {
+    'office and administrative support' : 'Business and Administration',
+    'architecture and engineering': 'Engineering and Construction',
+    'computer and mathematical' : 'Technology',
+    'sales and related': 'Business and Administration',    
+    'installation, maintenance, and repair': 'Facilities Management and Services',
+    'business and financial operations' : 'Business and Administration',
+    'production': 'Manufacturing',
+    'life, physical, and social science' : 'Science and Research',
+    'management': 'Business and Administration',
+    'community and social service' : 'Public Service',
+    'transportation and material moving': 'Transportation and Logistics',
+    'healthcare practitioners and technical' : 'Healthcare',
+    'personal care and service': 'Healthcare',
+    'educational instruction and library' : 'Education',
+    'construction and extraction': 'Engineering and Construction',
+    'arts, design, entertainment, sports, and media': 'Multimedia and Sports',
+    'food preparation and serving related' : 'Facilities Management and Services',
+    'protective service': 'Government and Public Safety',
+    'military specific' : 'Government and Public Safety',
+    'legal' : 'Legal Services',
+    'healthcare support': 'Healthcare',
+    'farming, fishing, and forestry': 'Agriculture and Natural Resources',
+    'building and grounds cleaning and maintenance': 'Facilities Management and Services', 
+    'nan' : 'Others'
+}
+
+# This dictionary maps raw and multilingual representations of contract types 
+# into standardized employment categories.
+contract_types_mapping = {
+    # Full Time
+    'full time': 'Full Time',
+    'tempo integral': 'Full Time',
+    'vollzeit': 'Full Time',
+    'fuldtid': 'Full Time',
+    'temps plein': 'Full Time',
+    'pe_ny_etat': 'Full Time',  # likely "permanent employment" in Danish/Norwegian
+
+    # Part Time
+    'part time': 'Part Time',
+    'deltid': 'Part Time',
+    'temps partiel': 'Part Time',
+
+    # Internship/Trainee
+    'internship': 'Internship/Trainee',
+    'intern': 'Internship/Trainee',
+    'trainee': 'Internship/Trainee',
+    'practitioner': 'Internship/Trainee',
+    'summer': 'Internship/Trainee',
+
+    # Remote/Flexible Work
+    'remote': 'Remote/Flexible',
+    'fully remote': 'Remote/Flexible',
+    'work from home': 'Remote/Flexible',
+    'trabalho remoto': 'Remote/Flexible',
+    'teletrabajo': 'Remote/Flexible',
+
+    # Contract/Temporary
+    'contract': 'Contract/Temporary',
+    'contractor': 'Contract/Temporary',
+    'temporary': 'Contract/Temporary',
+    'freelance': 'Contract/Temporary',
+    'tempo indeterminato': 'Contract/Temporary',
+
+    # Shifts/Schedule Types
+    'day shift': 'Shift Work',
+    'night shift': 'Shift Work',
+    'short term': 'Short Term',
+    'long term': 'Long Term',
+    'day time': 'Day Time',
+    'm f': 'Monday-Friday',
+
+    # Industry/Role Specific
+    'onsite': 'On-site',
+    'hybrid': 'Hybrid',
+    'all levels': 'All Levels',
+    'commission': 'Commission',
+    'festanstellung': 'Permanent',
+    'vaste aanstelling': 'Permanent',
+    'permanent': 'Permanent',
+    'nuit': 'Night',
+    'full or part time': 'Full or Part Time',
+    'm/w': 'Male/Female'
+}
+
+# This dictionary is used to group raw keyword entries from the `Keywords` column
+# into broader, standardized skill categories. 
 keywords_skills_mapping = {
 
     # Programming Languages

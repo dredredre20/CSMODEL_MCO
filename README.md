@@ -15,4 +15,4 @@
   ```bash
   pip install pandas numpy matplotlib seaborn scipy
 
-- Make sure the file Mapper.py is located in the same directory as the script you are running.
+- Make sure the files mapper.py and rule_miner.py are located in the same directory as the script you are running.
